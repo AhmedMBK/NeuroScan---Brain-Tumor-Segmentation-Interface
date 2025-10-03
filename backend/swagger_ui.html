@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Swagger pour l'API de Segmentation de Tumeurs Cérébrales</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.9.0/swagger-ui.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #1b1b1b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>API de Segmentation de Tumeurs Cérébrales</h1>
+        <p>Interface Swagger pour tester l'API</p>
+    </div>
+    <div class="container">
+        <div id="swagger-ui"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.9.0/swagger-ui-bundle.js"></script>
+    <script>
+        window.onload = function() {
+            const ui = SwaggerUIBundle({
+                spec: {
+                    openapi: "3.0.0",
+                    info: {
+                        title: "API de Segmentation de Tumeurs Cérébrales",
+                        description: "Cette API permet de segmenter des tumeurs cérébrales à partir d'images IRM au format NIfTI.",
+                        version: "1.0.0"
+                    },
+                    servers: [
+                        {
+                            url: "http://localhost:5000",
+                            description: "Serveur local"
+                        }
+                    ],
+                    paths: {
+                        "/": {
+                            get: {
+                                summary: "Page d'accueil",
+                                description: "Retourne des informations sur l'API",
+                                responses: {
+                                    "200": {
+                                        description: "Informations sur l'API",
+                                        content: {
+                                            "application/json": {
+                                                schema: {
+                                                    type: "object",
+                                                    properties: {
+                                                        message: { type: "string" },
+                                                        status: { type: "string" },
+                                                        endpoints: { type: "object" }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "/status": {
+                            get: {
+                                summary: "Statut de l'API",
+                                description: "Vérifie le statut de l'API et du modèle",
+                                responses: {
+                                    "200": {
+                                        description: "Statut de l'API",
+                                        content: {
+                                            "application/json": {
+                                                schema: {
+                                                    type: "object",
+                                                    properties: {
+                                                        api_status: { type: "string" },
+                                                        model_loaded: { type: "boolean" },
+                                                        tensorflow_version: { type: "string" }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "/segment": {
+                            post: {
+                                summary: "Segmenter une tumeur cérébrale",
+                                description: "Segmente une tumeur cérébrale à partir des fichiers NIfTI téléchargés",
+                                requestBody: {
+                                    content: {
+                                        "multipart/form-data": {
+                                            schema: {
+                                                type: "object",
+                                                properties: {
+                                                    flair: {
+                                                        type: "string",
+                                                        format: "binary",
+                                                        description: "Fichier NIfTI FLAIR"
+                                                    },
+                                                    t1: {
+                                                        type: "string",
+                                                        format: "binary",
+                                                        description: "Fichier NIfTI T1"
+                                                    },
+                                                    t1ce: {
+                                                        type: "string",
+                                                        format: "binary",
+                                                        description: "Fichier NIfTI T1ce"
+                                                    },
+                                                    t2: {
+                                                        type: "string",
+                                                        format: "binary",
+                                                        description: "Fichier NIfTI T2"
+                                                    },
+                                                    case_id: {
+                                                        type: "string",
+                                                        description: "Identifiant du cas (optionnel)"
+                                                    }
+                                                },
+                                                required: ["flair", "t1", "t1ce", "t2"]
+                                            }
+                                        }
+                                    }
+                                },
+                                responses: {
+                                    "200": {
+                                        description: "Segmentation réussie",
+                                        content: {
+                                            "application/json": {
+                                                schema: {
+                                                    type: "object",
+                                                    properties: {
+                                                        message: { type: "string" },
+                                                        case_id: { type: "string" },
+                                                        segmentation_image_url: { type: "string" },
+                                                        tumor_statistics: { type: "object" }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "400": {
+                                        description: "Requête invalide",
+                                        content: {
+                                            "application/json": {
+                                                schema: {
+                                                    type: "object",
+                                                    properties: {
+                                                        error: { type: "string" }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "500": {
+                                        description: "Erreur serveur",
+                                        content: {
+                                            "application/json": {
+                                                schema: {
+                                                    type: "object",
+                                                    properties: {
+                                                        error: { type: "string" }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "/results/{filename}": {
+                            get: {
+                                summary: "Récupérer une image de résultat",
+                                description: "Récupère une image de résultat par son nom de fichier",
+                                parameters: [
+                                    {
+                                        name: "filename",
+                                        in: "path",
+                                        required: true,
+                                        schema: {
+                                            type: "string"
+                                        },
+                                        description: "Nom du fichier image"
+                                    }
+                                ],
+                                responses: {
+                                    "200": {
+                                        description: "Image de résultat",
+                                        content: {
+                                            "image/png": {
+                                                schema: {
+                                                    type: "string",
+                                                    format: "binary"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "404": {
+                                        description: "Fichier non trouvé",
+                                        content: {
+                                            "application/json": {
+                                                schema: {
+                                                    type: "object",
+                                                    properties: {
+                                                        error: { type: "string" }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                dom_id: '#swagger-ui',
+                deepLinking: true,
+                presets: [
+                    SwaggerUIBundle.presets.apis,
+                    SwaggerUIBundle.SwaggerUIStandalonePreset
+                ],
+                layout: "BaseLayout"
+            });
+        };
+    </script>
+</body>
+</html>

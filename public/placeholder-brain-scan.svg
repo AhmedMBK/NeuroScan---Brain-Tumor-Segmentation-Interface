@@ -1,0 +1,7 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#f3f4f6"/>
+  <circle cx="200" cy="200" r="150" fill="#e5e7eb" stroke="#9ca3af" stroke-width="2"/>
+  <circle cx="200" cy="200" r="100" fill="#d1d5db" stroke="#6b7280" stroke-width="1"/>
+  <circle cx="200" cy="200" r="50" fill="#9ca3af" stroke="#374151" stroke-width="1"/>
+  <text x="200" y="350" text-anchor="middle" font-family="Arial" font-size="16" fill="#6b7280">Scan Cérébral</text>
+</svg>

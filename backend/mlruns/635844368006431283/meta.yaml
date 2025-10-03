@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/Thinkpad/Desktop/cerebloom-classify-87-mainfatma/backend/mlruns/635844368006431283
+creation_time: 1748821397707
+experiment_id: '635844368006431283'
+last_update_time: 1748821397707
+lifecycle_stage: active
+name: cerebloom_brain_tumor_segmentation

@@ -1,0 +1,18 @@
+RAPPORT DE SEGMENTATION CEREBLOOM
+==================================================
+
+Patient ID: stringd5f01d3b-b54b-43a2-ba3c-0b12c797affc
+Date: 2025-05-28 16:06:59
+Segmentation ID: f146d82d-80c3-4d68-922d-046f392d841c
+
+MODALITÉS UTILISÉES:
+  - T1
+  - FLAIR
+  - T1CE
+  - T2
+
+RÉSULTATS:
+  Volume total: 362.50 cm³
+  Noyau nécrotique: 353.96 cm³
+  Œdème péritumoral: 8.51 cm³
+  Tumeur rehaussée: 0.04 cm³

@@ -1,0 +1,32 @@
+RAPPORT DE SEGMENTATION CEREBLOOM - LOADMODEL.PY
+============================================================
+
+Patient ID: stringd5f01d3b-b54b-43a2-ba3c-0b12c797affc
+Date: 2025-05-28 16:06:44
+Segmentation ID: 5eb76c4b-afa6-497b-a37c-edbdcf02f44a
+Méthode: Simulation
+
+IMAGES UTILISÉES:
+  FLAIR: a3c674a6-ea58-4853-b585-4cf333b3640c_flair.nii
+  T1CE: a3c674a6-ea58-4853-b585-4cf333b3640c_t1ce.nii
+
+RÉSULTATS DE SEGMENTATION:
+  Volume total tumoral: 8383.78 cm³
+  Taille voxel: 1.0 × 1.0 × 1.0 mm
+
+DÉTAIL PAR CLASSE:
+  Noyau nécrotique/kystique:
+    Volume: 7373.88 cm³
+    Pourcentage: 88.0%
+    Voxels: 7373882
+
+  Œdème péritumoral:
+    Volume: 33.12 cm³
+    Pourcentage: 0.4%
+    Voxels: 33121
+
+  Tumeur rehaussée:
+    Volume: 976.78 cm³
+    Pourcentage: 11.7%
+    Voxels: 976778
+

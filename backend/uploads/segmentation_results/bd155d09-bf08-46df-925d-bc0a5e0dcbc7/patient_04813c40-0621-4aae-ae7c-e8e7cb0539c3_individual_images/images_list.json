@@ -1,0 +1,125 @@
+{
+  "slices": [
+    56,
+    74,
+    92
+  ],
+  "modalities": [
+    "t1",
+    "t1ce",
+    "t2",
+    "flair",
+    "segmentation",
+    "overlay"
+  ],
+  "images": [
+    {
+      "slice": 56,
+      "modality": "t1",
+      "filename": "slice_56_t1.png",
+      "url": "/api/segmentation/patient_04813c40-0621-4aae-ae7c-e8e7cb0539c3/image/slice_56_t1.png"
+    },
+    {
+      "slice": 56,
+      "modality": "t1ce",
+      "filename": "slice_56_t1ce.png",
+      "url": "/api/segmentation/patient_04813c40-0621-4aae-ae7c-e8e7cb0539c3/image/slice_56_t1ce.png"
+    },
+    {
+      "slice": 56,
+      "modality": "t2",
+      "filename": "slice_56_t2.png",
+      "url": "/api/segmentation/patient_04813c40-0621-4aae-ae7c-e8e7cb0539c3/image/slice_56_t2.png"
+    },
+    {
+      "slice": 56,
+      "modality": "flair",
+      "filename": "slice_56_flair.png",
+      "url": "/api/segmentation/patient_04813c40-0621-4aae-ae7c-e8e7cb0539c3/image/slice_56_flair.png"
+    },
+    {
+      "slice": 56,
+      "modality": "segmentation",
+      "filename": "slice_56_segmentation.png",
+      "url": "/api/segmentation/patient_04813c40-0621-4aae-ae7c-e8e7cb0539c3/image/slice_56_segmentation.png"
+    },
+    {
+      "slice": 56,
+      "modality": "overlay",
+      "filename": "slice_56_overlay.png",
+      "url": "/api/segmentation/patient_04813c40-0621-4aae-ae7c-e8e7cb0539c3/image/slice_56_overlay.png"
+    },
+    {
+      "slice": 74,
+      "modality": "t1",
+      "filename": "slice_74_t1.png",
+      "url": "/api/segmentation/patient_04813c40-0621-4aae-ae7c-e8e7cb0539c3/image/slice_74_t1.png"
+    },
+    {
+      "slice": 74,
+      "modality": "t1ce",
+      "filename": "slice_74_t1ce.png",
+      "url": "/api/segmentation/patient_04813c40-0621-4aae-ae7c-e8e7cb0539c3/image/slice_74_t1ce.png"
+    },
+    {
+      "slice": 74,
+      "modality": "t2",
+      "filename": "slice_74_t2.png",
+      "url": "/api/segmentation/patient_04813c40-0621-4aae-ae7c-e8e7cb0539c3/image/slice_74_t2.png"
+    },
+    {
+      "slice": 74,
+      "modality": "flair",
+      "filename": "slice_74_flair.png",
+      "url": "/api/segmentation/patient_04813c40-0621-4aae-ae7c-e8e7cb0539c3/image/slice_74_flair.png"
+    },
+    {
+      "slice": 74,
+      "modality": "segmentation",
+      "filename": "slice_74_segmentation.png",
+      "url": "/api/segmentation/patient_04813c40-0621-4aae-ae7c-e8e7cb0539c3/image/slice_74_segmentation.png"
+    },
+    {
+      "slice": 74,
+      "modality": "overlay",
+      "filename": "slice_74_overlay.png",
+      "url": "/api/segmentation/patient_04813c40-0621-4aae-ae7c-e8e7cb0539c3/image/slice_74_overlay.png"
+    },
+    {
+      "slice": 92,
+      "modality": "t1",
+      "filename": "slice_92_t1.png",
+      "url": "/api/segmentation/patient_04813c40-0621-4aae-ae7c-e8e7cb0539c3/image/slice_92_t1.png"
+    },
+    {
+      "slice": 92,
+      "modality": "t1ce",
+      "filename": "slice_92_t1ce.png",
+      "url": "/api/segmentation/patient_04813c40-0621-4aae-ae7c-e8e7cb0539c3/image/slice_92_t1ce.png"
+    },
+    {
+      "slice": 92,
+      "modality": "t2",
+      "filename": "slice_92_t2.png",
+      "url": "/api/segmentation/patient_04813c40-0621-4aae-ae7c-e8e7cb0539c3/image/slice_92_t2.png"
+    },
+    {
+      "slice": 92,
+      "modality": "flair",
+      "filename": "slice_92_flair.png",
+      "url": "/api/segmentation/patient_04813c40-0621-4aae-ae7c-e8e7cb0539c3/image/slice_92_flair.png"
+    },
+    {
+      "slice": 92,
+      "modality": "segmentation",
+      "filename": "slice_92_segmentation.png",
+      "url": "/api/segmentation/patient_04813c40-0621-4aae-ae7c-e8e7cb0539c3/image/slice_92_segmentation.png"
+    },
+    {
+      "slice": 92,
+      "modality": "overlay",
+      "filename": "slice_92_overlay.png",
+      "url": "/api/segmentation/patient_04813c40-0621-4aae-ae7c-e8e7cb0539c3/image/slice_92_overlay.png"
+    }
+  ]
+}

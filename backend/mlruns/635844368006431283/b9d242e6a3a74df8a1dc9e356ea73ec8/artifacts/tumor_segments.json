@@ -1,0 +1,26 @@
+[
+  {
+    "type": "NECROTIC_CORE",
+    "name": "Noyau n\u00e9crotique/kystique",
+    "volume_cm3": 7.326,
+    "percentage": 17.81571459838039,
+    "color_code": "#FF0000",
+    "description": "Zone centrale n\u00e9crotique"
+  },
+  {
+    "type": "PERITUMORAL_EDEMA",
+    "name": "\u0152d\u00e8me p\u00e9ritumoral",
+    "volume_cm3": 20.675,
+    "percentage": 50.278446535833275,
+    "color_code": "#00FF00",
+    "description": "\u0152d\u00e8me autour de la tumeur"
+  },
+  {
+    "type": "ENHANCING_TUMOR",
+    "name": "Tumeur rehauss\u00e9e",
+    "volume_cm3": 13.12,
+    "percentage": 31.905838865786336,
+    "color_code": "#0080FF",
+    "description": "Tumeur active avec prise de contraste"
+  }
+]

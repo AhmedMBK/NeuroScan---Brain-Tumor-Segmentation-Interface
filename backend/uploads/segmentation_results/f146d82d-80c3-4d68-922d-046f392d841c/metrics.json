@@ -1,0 +1,29 @@
+{
+  "total_tumor_volume_cm3": 362.505,
+  "classes_found": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "class_volumes": {
+    "1": {
+      "name": "Noyau n\u00e9crotique",
+      "volume_voxels": 353956,
+      "volume_cm3": 353.956,
+      "percentage": 97.64168770085931
+    },
+    "2": {
+      "name": "\u0152d\u00e8me p\u00e9ritumoral",
+      "volume_voxels": 8510,
+      "volume_cm3": 8.51,
+      "percentage": 2.3475538268437677
+    },
+    "3": {
+      "name": "Tumeur rehauss\u00e9e",
+      "volume_voxels": 39,
+      "volume_cm3": 0.039,
+      "percentage": 0.010758472296933837
+    }
+  }
+}

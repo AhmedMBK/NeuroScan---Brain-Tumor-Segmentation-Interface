@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Thinkpad/Desktop/cerebloom-classify-87-mainfatma/backend/mlruns/635844368006431283/b9d242e6a3a74df8a1dc9e356ea73ec8/artifacts
+end_time: 1748934167955
+entry_point_name: ''
+experiment_id: '635844368006431283'
+lifecycle_stage: active
+run_id: b9d242e6a3a74df8a1dc9e356ea73ec8
+run_name: segmentation_04813c40-0621-4aae-ae7c-e8e7cb0539c3_20250603_080136
+run_uuid: b9d242e6a3a74df8a1dc9e356ea73ec8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748934096511
+status: 3
+tags: []
+user_id: Thinkpad
