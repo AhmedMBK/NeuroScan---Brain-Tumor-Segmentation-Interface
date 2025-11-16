@@ -10,7 +10,7 @@
 [![React](https://img.shields.io/badge/react-18.3+-61dafb.svg)](https://reactjs.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688.svg)](https://fastapi.tiangolo.com/)
 
-*Developed by: Fatma ELMABROUK, Ahmed CHELLY, Rahma BOUKHRIS*
+*Developed by: Ahmed ELMABROUK, Azza CHELLY, Rahma BOUKHRIS*
 
 </div>
 
